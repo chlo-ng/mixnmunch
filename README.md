@@ -15,4 +15,15 @@ For the sake of simplicity and the fact that we had 10 days, I decided to use:
 - CSS
 - EdamamAPI
 
+## Features Description
+Select your dietery preference and then click the "generate meal" button to generate a randomly put together meal for you!
+Clicking on the images of the dish will lead you straight to the recipe link.
+
+## Future Optimizations
+This idea is very interesting to me, and I would love to improve it in the future by possibly adding:
+- a user login feature
+- allowing for logged in users to save their favorite generated meal
+- sharing favorite combos with friends or to social media
+- migrating everything to React.js for better utility
+
 
