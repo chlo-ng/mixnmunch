@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+    <html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Recipe App</title>
+        <link rel="stylesheet" href="style.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;700&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;1,300&display=swap" rel="stylesheet">
+    </head>
+
+    <body>
+        <div class="background-image">
+        </div>
+
+        <div class="content">
+            <h1> mix n munch </h1>
+            <div id="query-container">
+                <p> select a condition: </p>
+                <select id="dietType">
+                    <option value="vegetarian">vegetarian</option>
+                    <option value="vegan">vegan</option>
+                    <option value="pescetarian">pescetarian</option>
+                    <option value="dairy-free">dairy-free</option>
+                    <option value="alcohol-free">alcohol-free</option>
+                    <option value="keto-friendly">keto-friendly</option>
+                    <option value="low-sugar">low-sugar</option>
+                    <option value="random">leave it up to you</option>
+                </select>
+                <button onclick="getThreeCategoriesRecipes('834f2ea1', 'dc4ccbd08774419e971b0a5f16da462e')"> 
+                    <b> generate meal </b>
+                </button>
+            </div>
+
+            <div id="event-container"> 
+                
+            </div>
+
+            <div id="recipe-container">
+                <div id="starter-container">
+                    <h3> starter </h3>
+                </div>
+
+                <div id="main-course-container">
+                    <h3> main course </h3>
+                </div>
+
+                <div id="dessert-container">
+                    <h3> dessert </h3>
+                </div>
+            </div>
+        </div>
+    </body>
+
+    <!-- <script src="http://127.0.0.1:5500/script.js"></script> -->
+    <script src="http://127.0.0.1:5500/script.js"></script>
+
+</html>

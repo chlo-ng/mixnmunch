@@ -1,0 +1,128 @@
+body {
+    background-color: #f9efdb;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: 0;
+}
+
+.background-image {
+    width: 100%;
+    height: 100%;
+    background-image: url('./background.png');
+    background-size: cover; 
+    background-size: cover;
+    z-index: 1;
+    margin:0;
+    padding:0;
+}
+
+body::before,
+body::after {
+    content: '';
+    position: fixed;
+    background-color: #402F1D; 
+    z-index: -999;
+}
+
+body::before {
+    top: 0;
+    bottom: 0;
+    left: 0;
+    width: 30px; /* Adjust the width of the line as needed */
+}
+
+body::after {
+    top: 0;
+    bottom: 0;
+    right: 0;
+    width: 30px; /* Adjust the width of the line as needed */
+}
+
+.content {
+    top: 0;
+    margin-top: 0;
+    padding-left: 80px;
+}
+
+body h1 {
+    color: #48260D; 
+    font-family: 'Poppins', sans-serif;
+    font-size: 72px;
+    margin: 0;
+    padding: 0; 
+    width: fit-content;
+}
+
+body p {
+    color: #638889;
+    font-family: 'Arial', sans-serif;
+    font-size: 20px;
+    margin: 0;
+    width: fit-content;
+    padding-top: .25em;
+}
+
+body button {
+    padding: .25em .5em;
+    background-color: #9dbc98;
+    border-radius: 10px;
+    border: none;
+}
+
+body button:hover {
+    color: #f9efdb;
+    cursor: pointer;
+}
+
+body select {
+    background-color: transparent;
+    width: max-content;
+    height: 35px;
+    padding: 0;
+    border-radius: 10px;
+}
+
+#query-container {
+    display: flex;
+    gap: .65em;
+    margin-bottom: .5em;
+}
+
+#recipe-container {
+    display: flex;
+    width: 85vw;
+    height: 25em;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 200;
+    text-align: center;
+    gap: 4.5em;
+}
+
+img {
+    width: 15em;
+    height: 15em;
+    border-radius: 25px;
+}
+
+#recipe-container h4 {
+    height: 4em;
+    padding: 0em 0.2em;
+}
+
+#starter-container, #main-course-container, #dessert-container {
+    width: 25vw;
+    border-width: 2px;
+    border-color: #638889;
+    border-style: double;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.5);
+}
+
+#event-container {
+    width: 84vw;
+    display: flex;
+    margin-bottom: .5em;
+    justify-content: center;
+    color: #638889;
+}
